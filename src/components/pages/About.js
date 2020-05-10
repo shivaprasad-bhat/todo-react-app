@@ -10,9 +10,11 @@ function About() {
                 Version: 1.0.0
                 <br />
                 Created By:{' '}
-                <a href="https://github.com/shvaprasad-bhat">
+                <a href="https://github.com/shivaprasad-bhat">
+                    {' '}
                     Shivaprasad Bhat
                 </a>
+                <br />
                 Courtesy: Traversy Media
             </p>
         </React.Fragment>
