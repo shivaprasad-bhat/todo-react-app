@@ -46,7 +46,7 @@ export class App extends Component {
                         <Header />
                         <Route
                             exact
-                            path="/todo-react-app"
+                            path="/"
                             render={(props) => (
                                 <React.Fragment>
                                     <AddTodo addTodo={this.addTodo} />
