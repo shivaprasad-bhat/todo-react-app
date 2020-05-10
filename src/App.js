@@ -9,30 +9,14 @@ import About from './components/pages/About';
 
 export class App extends Component {
     state = {
-        todos: [
-            {
-                id: uuid(),
-                title: 'Meeting with Boss',
-                isCompleted: false,
-            },
-            {
-                id: uuid(),
-                title: 'Dinner with wife',
-                isCompleted: false,
-            },
-            {
-                id: uuid(),
-                title: 'Get books from Library',
-                isCompleted: false,
-            },
-        ],
+        todos: [],
     };
 
     //Toggle Complete
     markComplete = (id) => {
         this.setState({
             todos: this.state.todos.map((todo) => {
-                if (todo.id == id) {
+                if (todo.id === id) {
                     todo.isCompleted = !todo.isCompleted;
                 }
                 return todo;
@@ -62,7 +46,7 @@ export class App extends Component {
                         <Header />
                         <Route
                             exact
-                            path="/"
+                            path="/todo-react-app"
                             render={(props) => (
                                 <React.Fragment>
                                     <AddTodo addTodo={this.addTodo} />
